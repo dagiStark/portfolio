@@ -40,8 +40,6 @@ const About = () => {
                     veritatis ullam repellendus asperiores non itaque consequuntur 
                     maxime tempora in!
                 </p>
-
-
             </div>
         </div>
     </div>
