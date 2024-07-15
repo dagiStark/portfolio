@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='text-4xl relative'>
       footer
     </div>
   )
