@@ -16,24 +16,43 @@ export default function Home() {
   ];
 
   return (
-    <main className="relative bg-black-100 flex  mx-auto sm:px-10 px-5">
-      <div className="fixed top-[40%] left-4 ml-8 mr-5 ">
+    <main className="">
+      <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="fixed top-[40%] left-4 ml-8 mr-5 ">
+          <SideBar />
+        </div>
+
+        <div className="flex w-screen">
+          <TracingBeam className="">
+            <FloatingNav navItems={navItems} />
+            <About />
+            <Projects />
+            {/* <Testimonials />
+            <Experience />
+            <Footer /> */}
+          </TracingBeam>
+        </div>
+
+        <p className="writing-vertical-rl rotate-90 text-base fixed text-white p-2 right-10 top-96">
+          dagigelaneh26@gmail.com
+        </p>
+      </div>
+    </main>
+  );
+}
+
+{
+  /* <div className="fixed top-[40%] left-4 ml-8 mr-5 ">
         <SideBar />
       </div>
-      <div className="flex flex-col ml-20">
-        <TracingBeam className="px-10">
+      <div className="">
+        <TracingBeam className="">
           <FloatingNav navItems={navItems} />
           <About />
-          <Projects />
-          <Experience />
-          <Testimonials />
-          <Footer />
         </TracingBeam>
       </div>
 
       <div className="fixed top-[40%] right-4">
         <p className="writing-vertical-rl rotate-90 text-base text-white p-2">dagigelaneh26@gmail.com</p>
-      </div>
-    </main>
-  );
+      </div> */
 }
