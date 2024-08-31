@@ -4,58 +4,54 @@ import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import SideBar from "@/components/SideBar";
-import Testimonials from "@/components/Testimonials";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
-import { TracingBeam } from "@/components/ui/TracingBeam";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
 export default function Home() {
   const navItems = [
     {
-      name: "About",
+      name: "Home",
       link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "About",
+      link: "/about",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
     },
   ];
 
   return (
     <main className="">
-      <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-        <div className="fixed top-[40%] left-4 ml-8 mr-5 ">
+      <FloatingNav navItems={navItems} />
+      <div className=" bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="fixed z-10 -bottom-5 left-10 mr-5 mb-5 flex flex-col h-[100vh] items-center justify-end">
           <SideBar />
+          <div className="border-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600 opacity-25 h-[25vh] mt-5"></div>
         </div>
 
-        <div className="flex w-screen">
-          <TracingBeam className="">
-            <FloatingNav navItems={navItems} />
-            <About />
-            <Skills />
-            <Approach />
-            <Projects />
-
-            {/* <Testimonials />
-            <Footer /> */}
-          </TracingBeam>
+        <div className="flex flex-col ml-60 mr-60">
+          <About />
+          <Skills />
+          <Approach />
+          <Projects />
+          <Footer />
         </div>
 
-        <p className="writing-vertical-rl rotate-90 text-base fixed text-white p-2 right-10 top-96">
-          dagigelaneh26@gmail.com
-        </p>
+        <div className="fixed -bottom-5 -right-10 mr-5 mb-5 flex flex-col h-[100vh] items-center justify-end">
+          <p className="text-base text-white p-2 transform rotate-90 mb-4">
+            <span>dagigelaneh26@gmail.com</span>
+          </p>
+          <div className="border-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600 opacity-25 h-[25vh] mt-24"></div>
+        </div>
       </div>
     </main>
   );
-}
-
-{
-  /* <div className="fixed top-[40%] left-4 ml-8 mr-5 ">
-        <SideBar />
-      </div>
-      <div className="">
-        <TracingBeam className="">
-          <FloatingNav navItems={navItems} />
-          <About />
-        </TracingBeam>
-      </div>
-
-      <div className="fixed top-[40%] right-4">
-        <p className="writing-vertical-rl rotate-90 text-base text-white p-2">dagigelaneh26@gmail.com</p>
-      </div> */
 }

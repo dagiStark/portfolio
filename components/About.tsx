@@ -65,7 +65,7 @@ const About = () => {
             </p>
           </div>
           <div className="">
-            <Image src={me} alt="" />
+            <Image src={me} alt="" className="border-purple-400 border-8  rounded-tr-[30%] rounded-bl-[30%] rounded-tl-[50%] rounded-br-[50%]" />
           </div>
         </div>
       </div>

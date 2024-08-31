@@ -73,22 +73,75 @@ export const aboutMe = {};
 export const skills = [
   {
     id: 1,
-    img: "/p4.svg",
-    title: "front-end -> Next js react react-native back-end -> node js ",
+    img: "/next.svg",
+    title: "Next js",
   },
   {
-    id: 1,
-    img: "/p4.svg",
+    id: 2,
+    img: "/javascript-1.svg",
     title: "javaScript",
   },
   {
-    id: 1,
-    img: "/p4.svg",
-    title: "Node js",
+    id: 3,
+    img: "/ts.svg",
+    title: "TypeScript",
   },
   {
-    id: 1,
-    img: "/p4.svg",
+    id: 4,
+    img: "/react-2.svg",
     title: "React ",
   },
+  {
+    id: 5,
+    img: "/react-native-1.svg",
+    title: "React Native",
+  },
+  {
+    id: 6,
+    img: "/python-5.svg",
+    title: "Python",
+  },
+  {
+    id: 7,
+    img: "/nodejs-3.svg",
+    title: "Node Js",
+  },
+  {
+    id: 8,
+    img: "/mongodb-icon-1.svg",
+    title: "MongoDb",
+  },
+  {
+    id: 9,
+    img: "/mysql-3.svg",
+    title: "MySql",
+  },
+  {
+    id: 10,
+    img: "/postgresql.svg",
+    title: "Postgresql",
+  },
 ];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/icons8-github.svg",
+    link: "Next js",
+  },
+  {
+    id: 2,
+    img: "/icons8-telegram.svg",
+    link: "Next js",
+  },
+  {
+    id: 3,
+    img: "/icons8-linkedin.svg",
+    link: "Next js",
+  },
+  {
+    id: 4,
+    img: "/icons8-twitter.svg",
+    link: "Next js",
+  },
+]

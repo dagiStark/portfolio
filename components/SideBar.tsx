@@ -1,34 +1,22 @@
 import React from "react";
-import github from '../public/icons8-github.svg'
-import telegram from '../public/icons8-telegram.svg'
+
 import Image from "next/image";
+import { socialMedia } from "@/constants";
 
 const SideBar = () => {
   return (
     <div>
-      <div className=" text-2xl ">
-        <ul className="flex flex-col items-center gap-4">
+      <div className=" text-2xl flex flex-col gap-4 ">
+        {socialMedia.map(({id, img, link}) => (
+
+        <ul key={id} className="flex flex-col items-center gap-14">
           <li>
-            <a href="#">
-                <Image src={github} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <Image src={telegram} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <Image src={github} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <Image src={telegram} alt="" />
+            <a href={link}>
+                <Image src={img} alt="icons" width={"50"} height={"50"}/>
             </a>
           </li>
         </ul>
+        ))}
       </div>
     </div>
   );
