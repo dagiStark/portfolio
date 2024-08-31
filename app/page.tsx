@@ -1,5 +1,6 @@
 import About from "@/components/About";
-import Experience from "@/components/Experience";
+import Approach from "@/components/Approach";
+import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import SideBar from "@/components/SideBar";
@@ -26,9 +27,11 @@ export default function Home() {
           <TracingBeam className="">
             <FloatingNav navItems={navItems} />
             <About />
+            <Skills />
+            <Approach />
             <Projects />
+
             {/* <Testimonials />
-            <Experience />
             <Footer /> */}
           </TracingBeam>
         </div>

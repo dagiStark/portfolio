@@ -1,44 +1,40 @@
-
-
 export const projects = [
-    {
-      id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
-    },
-    {
-      id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
+  {
+    id: 1,
+    title: "3D Solar System Planets to Explore",
+    des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/ui.earth.com",
+  },
+  {
+    id: 2,
+    title: "Yoom - Video Conferencing App",
+    des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
 
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "/ui.yoom.com",
-    },
-    {
-      id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/ui.yoom.com",
+  },
+  {
+    id: 3,
+    title: "AI Image SaaS - Canva Application",
+    des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
 
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "/ui.aiimg.com",
-    },
-    {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/ui.aiimg.com",
+  },
+  {
+    id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "nostrum dolor rerum temporibus veritatis ullam repellendus asperiores non itaque consequuntur maxime tempora in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,ducimus. Omnis quisquam, quas atque, laudantium,  quinostrum dolor rerum temporibus veritatis ullam repellendusasperiores non itaque consequuntur maxime tempora in!g Three.js.",
 
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "/ui.apple.com",
-    },
-  ];
-
-
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+  },
+];
 
 export const testimonials = [
   {
@@ -70,9 +66,29 @@ export const testimonials = [
     name: "Herman Melville",
     title: "Moby-Dick",
   },
-]
+];
 
+export const aboutMe = {};
 
-export const aboutMe = {
- 
-}
+export const skills = [
+  {
+    id: 1,
+    img: "/p4.svg",
+    title: "front-end -> Next js react react-native back-end -> node js ",
+  },
+  {
+    id: 1,
+    img: "/p4.svg",
+    title: "javaScript",
+  },
+  {
+    id: 1,
+    img: "/p4.svg",
+    title: "Node js",
+  },
+  {
+    id: 1,
+    img: "/p4.svg",
+    title: "React ",
+  },
+];
