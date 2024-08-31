@@ -127,17 +127,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/icons8-github.svg",
-    link: "Next js",
+    link: "https://github.com/dagiStark",
   },
   {
     id: 2,
     img: "/icons8-telegram.svg",
-    link: "Next js",
+    link: "https://t.me/dagi_gel",
   },
   {
     id: 3,
     img: "/icons8-linkedin.svg",
-    link: "Next js",
+    link: "https://www.linkedin.com/in/dagi-gelaneh-978509296/",
   },
   {
     id: 4,

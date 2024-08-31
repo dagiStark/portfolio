@@ -1,9 +1,11 @@
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "./ui/3dCard";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { projects } from "@/constants";
 import { WobbleCard } from "./ui/WobbleCard";
+
+
+
 
 const Projects = () => {
   return (
@@ -14,37 +16,31 @@ const Projects = () => {
       </div>
       <div className="pl-20 pr-16 pt-10">
         {projects.map(({ id, des, img, link }) => (
-          <div key={id} className="gap-28">
-            {id % 2 !== 0 ? (
-              <div className="flex mb-24 gap-14">
+          <div
+            key={id}
+            className="relative gap-28 mb-24 rounded-xl transition-transform duration-500 ease-in-out
+                       hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.5)]"
+          >
+            <div
+              className={`flex gap-14 transition-transform duration-500 ease-in-out
+                         ${id % 2 !== 0 ? '' : 'flex-row-reverse'}`}
+            >
+              <div className="w-1/2 p-2 flex items-center justify-center">
                 <WobbleCard>
                   <Image
                     src={img}
                     alt="project image"
                     height="500"
                     width="500"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                  />
-                </WobbleCard>
-                <div className="w-1/2 p-2">
-                  <p className="mb-4">Description...</p>
-                  <p className=" ">{des}</p>
-                </div>
-              </div>
-            ) : (
-              <div className="flex mb-24 gap-14">
-                <p className="w-1/2 p-2 ">{des}</p>
-                <WobbleCard>
-                  <Image
-                    src={img}
-                    alt="project image"
-                    height="1000"
-                    width="1000"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    className="h-60 w-full object-cover rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg"
                   />
                 </WobbleCard>
               </div>
-            )}
+              <div className="w-1/2 p-2">
+                <p className="mb-4">Description...</p>
+                <p>{des}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

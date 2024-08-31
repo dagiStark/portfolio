@@ -1,3 +1,4 @@
+"use client"
 import About from "@/components/About";
 import Approach from "@/components/Approach";
 import Skills from "@/components/Skills";
@@ -27,6 +28,9 @@ export default function Home() {
       ),
     },
   ];
+  const handleEmailClick = () => {
+    window.location.href = "mailto:dagigelaneh26@gmail.com";
+  };
 
   return (
     <main className="">
@@ -46,7 +50,14 @@ export default function Home() {
         </div>
 
         <div className="fixed -bottom-5 -right-10 mr-5 mb-5 flex flex-col h-[100vh] items-center justify-end">
-          <p className="text-base text-white p-2 transform rotate-90 mb-4">
+          <p
+            onClick={handleEmailClick}
+            className="text-base text-white p-2 transform rotate-90 mb-4 cursor-pointer
+                 transition-all duration-300 ease-in-out
+                 hover:text-transparent hover:bg-clip-text 
+                 hover:bg-gradient-to-r from-blue-500 to-purple-600
+                 hover:shadow-[0_0_15px_5px_rgba(0,0,0,0.5)] shadow-[0_0_10px_rgba(0,0,0,0.3)]"
+          >
             <span>dagigelaneh26@gmail.com</span>
           </p>
           <div className="border-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600 opacity-25 h-[25vh] mt-24"></div>

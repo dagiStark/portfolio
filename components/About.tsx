@@ -6,6 +6,10 @@ import me from "/public/cop.jpg";
 import Image from "next/image";
 
 const About = () => {
+
+  const downloadResume =()=>{
+    console.log("Button clicked");
+  }
   const words = ["better", "responsive", "beautiful", "modern"];
   return (
     <div id="about" className="flex flex-col ">
@@ -39,12 +43,12 @@ const About = () => {
         <div className=" mt-2">
           <TextGenerateEffect
             className="text-2xl "
-            words="I am a full-stack engineer"
+            words="I am a Full-Stack Engineer"
           />
           <div className="text-4xl mt-16">
             Build
             <FlipWords words={words} /> <br />
-            websites with me
+            websites & mobile apps with me
           </div>
         </div>
       </div>
@@ -63,6 +67,17 @@ const About = () => {
               nostrum dolor rerum temporibus veritatis ullam repellendus
               asperiores non itaque consequuntur maxime tempora in!
             </p>
+            <div className=" pr-16 mt-16">
+              <button
+                onClick={downloadResume}
+                className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+              >
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Download Resume
+                </span>
+              </button>
+            </div>
           </div>
           <div className="">
             <Image src={me} alt="" className="border-purple-400 border-8  rounded-tr-[30%] rounded-bl-[30%] rounded-tl-[50%] rounded-br-[50%]" />
