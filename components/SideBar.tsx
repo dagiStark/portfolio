@@ -4,7 +4,7 @@ import Image from "next/image";
 import { socialMedia } from "@/constants";
 
 const SideBar = () => {
-  const [focusedIndex, setFocusedIndex] = useState(null);
+  const [focusedIndex, setFocusedIndex] = useState<number | null>(null); 
 
   return (
     <div>
