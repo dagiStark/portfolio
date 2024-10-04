@@ -37,16 +37,22 @@ const Projects = () => {
               <div
                 className={`w-full absolute ${
                   id % 2 === 0 ? "left-0 text-left" : "right-0  text-right"
-                } top-4  md:w-1/2 flex flex-col justify-center text-white p-8 rounded-lg `}
+                } top-4  md:w-1/2 flex flex-col justify-center text-white p-8 rounded-lg group`}
               >
                 <h3 className="text-green-300 text-sm uppercase tracking-wide mb-2">
                   Featured Project
                 </h3>
                 <h2 className="text-6xl font-semibold mb-4">{"Title"}</h2>
-                <p className="text-lg md:text-xl leading-relaxed p-8 rounded-2xl  bg-blue-900">
+
+                {/* Box with Shiny Shadow on Hover */}
+                <p className="text-lg md:text-xl leading-relaxed p-8 rounded-2xl bg-blue-900 transition-shadow duration-500 ease-in-out group-hover:shadow-[0_15px_25px_10px_rgba(0,255,255,0.5)]">
                   {des}
                 </p>
-                <p className="bg-[#334a8f] p-3 mt-3 rounded-xl">Technologies</p>
+
+                {/* Technologies section revealed on hover */}
+                <p className="bg-[#334a8f] p-3 mt-3 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                  Technologies
+                </p>
               </div>
             </div>
           </div>
