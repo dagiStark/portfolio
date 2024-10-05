@@ -18,7 +18,7 @@ const scrollAnimation = {
 
 const Skills = () => {
   return (
-    <div className="mt-32 flex flex-col gap-10 ml- mr-14">
+    <div className="mt-32 flex flex-col gap-10 ml- mr-14" id="skills">
       <div className="flex items-center">
         <h1 className="text-4xl mx-4">My Skills__</h1>
         <hr className="border-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 opacity-5 flex-grow" />

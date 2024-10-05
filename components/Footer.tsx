@@ -6,7 +6,7 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="flex items-center">
+      <div className="flex items-center" id="contact">
         <h1 className="text-4xl mx-4">Contact Me__</h1>
         <hr className="border-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 opacity-5 flex-grow" />
       </div>

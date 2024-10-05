@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import About from "@/components/About";
 import Approach from "@/components/Approach";
 import Skills from "@/components/Skills";
@@ -11,18 +11,25 @@ import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 export default function Home() {
   const navItems = [
     {
-      name: "Home",
-      link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
       name: "About",
       link: "/about",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
+      name: "Skills",
+      link: "/skills",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
@@ -44,7 +51,6 @@ export default function Home() {
         <div className="flex flex-col ml-60 mr-60">
           <About />
           <Skills />
-          <Approach />
           <Projects />
           <Footer />
         </div>

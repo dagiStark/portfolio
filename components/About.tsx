@@ -7,7 +7,10 @@ import Image from "next/image";
 
 const About = () => {
   const downloadResume = () => {
-    console.log("Button clicked");
+    const link = document.createElement("a");
+    link.href = "/Dagim-gelaneh-CV.pdf";
+    link.download = "Dagim-CV.pdf";
+    link.click();
   };
   const words = ["better", "responsive", "beautiful", "modern"];
   return (

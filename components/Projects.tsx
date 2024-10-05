@@ -9,7 +9,7 @@ const Projects = () => {
     window.location.href = `${link}`; // for external navigation
   };
   return (
-    <div className="mt-32">
+    <div className="mt-32" id="projects">
       <div className="flex items-center">
         <h1 className="text-4xl mx-4">My Projects__</h1>
         <hr className="border-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 opacity-5 flex-grow" />
@@ -49,7 +49,7 @@ const Projects = () => {
                 <h2 className="text-5xl  font-semibold mb-4">{title}</h2>
 
                 {/* Box with Shiny Shadow on Hover */}
-                <p className="text-base md:text-xl leading-relaxed p-5 rounded-2xl bg-blue-900 transition-shadow duration-500 ease-in-out group-hover:shadow-[0_15px_25px_0px_rgba(0,255,255,0.5)]">
+                <p className="text-xs font-extralight from-neutral-700 md:text-xl leading-relaxed p-5 rounded-2xl bg-blue-900 transition-shadow duration-500 ease-in-out group-hover:shadow-[0_15px_25px_0px_rgba(0,255,255,0.5)]">
                   {des}
                 </p>
 
@@ -57,7 +57,7 @@ const Projects = () => {
                 <p
                   className={` p-3 mt-3 ${
                     id % 2 === 0 ? "justify-start" : "justify-end"
-                  } rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-wrap gap-2 items-start`}
+                  } rounded-xl  flex flex-wrap gap-2 items-start`}
                 >
                   {technologies?.map((item, index) => (
                     <span
