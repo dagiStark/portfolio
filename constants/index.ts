@@ -1,21 +1,22 @@
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "nostrum dolor rerum temporibus veritatis me tempora inrequuntur maxime tempora in!g Three.js.",
-    img: "/p1.svg",
+    title: "E-Commerce",
+    des: "An e-commerce platform built with Sanity as a headless CMS for content management, integrated with Stripe for secure and seamless payment processing.",
+    img: "/ecommerce.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://github.com/dagiStark/e-commerce-2",
+    technologies: ["Sanity.io", "Next.js", "Stripe", "Tailwind", "Typescript"],
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "nostrum dolor rerum temporibus veritatis me tempora inrequuntur maxime tempora in!g Three.js.",
+    title: "Pizza Ordering Service",
+    des: "A pizza ordering service that allows restaurants to register and manage their menus and orders, admin panels for owners and administrators, role-based access for efficient user management.",
 
-
-    img: "/p2.svg",
+    img: "/pizza.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/dagiStark/pizza-ordering-service",
+    technologies: ["Node Js", "React", "Postgresql", "Material UI", "Zod"],
   },
   {
     id: 3,
@@ -145,4 +146,4 @@ export const socialMedia = [
     img: "/icons8-twitter.svg",
     link: "Next js",
   },
-]
+];

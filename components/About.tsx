@@ -6,10 +6,9 @@ import me from "/public/cop.jpg";
 import Image from "next/image";
 
 const About = () => {
-
-  const downloadResume =()=>{
+  const downloadResume = () => {
     console.log("Button clicked");
-  }
+  };
   const words = ["better", "responsive", "beautiful", "modern"];
   return (
     <div id="about" className="flex flex-col ">
@@ -36,7 +35,7 @@ const About = () => {
         <div className="max-w-[90vw] text-center">
           <h2 className="text-start mb-8 text-xl text-white">Hi, my name is</h2>
           <h1 className="text-start text-4xl md:text-6xl font-bold text-white mb-1">
-            Dagim Gelaneh 
+            Dagim Gelaneh
           </h1>
         </div>
 
@@ -57,15 +56,25 @@ const About = () => {
         <h2 className="text-2xl mb-10">_About Me.</h2>
         <div className="flex justify-between w-full">
           <div className="w-1/2 p-2 ">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              ducimus. Omnis quisquam, quas atque, laudantium, <br /> qui
-              nostrum dolor rerum temporibus veritatis ullam repellendus
-              asperiores non itaque consequuntur maxime tempora in! <br />
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-              ducimus. Omnis quisquam, quas atque, laudantium, <br /> qui
-              nostrum dolor rerum temporibus veritatis ullam repellendus
-              asperiores non itaque consequuntur maxime tempora in!
+            <p className="text-xl font-extralight">
+              <div className="text-left gap-8 flex flex-col">
+                <p>
+                  Hi, I&apos;m Dagim Gelaneh, a dedicated full-stack web and
+                  mobile app developer who enjoys creating innovative solutions.
+                  I have experience in API development and testing, along with
+                  responsive frontend development. I love taking on challenging
+                  projects and working with great teams, focusing on delivering
+                  quality and scalable results.
+                </p>
+                <p>
+                  I have experience working on algorithms and developing backend
+                  applications, where I&apos;ve honed my skills in optimizing
+                  performance and ensuring efficient data processing. My work
+                  has involved building robust server-side solutions that
+                  support various functionalities and enhance the overall user
+                  experience.
+                </p>
+              </div>
             </p>
             <div className=" pr-16 mt-16">
               <button
@@ -80,7 +89,11 @@ const About = () => {
             </div>
           </div>
           <div className="">
-            <Image src={me} alt="" className="border-purple-400 border-8  rounded-tr-[30%] rounded-bl-[30%] rounded-tl-[50%] rounded-br-[50%]" />
+            <Image
+              src={me}
+              alt=""
+              className="border-purple-400 border-8  rounded-tr-[30%] rounded-bl-[30%] rounded-tl-[50%] rounded-br-[50%]"
+            />
           </div>
         </div>
       </div>
