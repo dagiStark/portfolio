@@ -55,7 +55,7 @@ const About = () => {
       <div className="flex flex-col relative mt-20 mb-4">
         <h2 className="text-2xl mb-10">_About Me.</h2>
         <div className="flex justify-between w-full">
-          <div className="w-1/2 p-2 ">
+          <div className="w-[60%] p-2 ">
             <p className="text-xl font-extralight">
               <div className="text-left gap-8 flex flex-col">
                 <p>
