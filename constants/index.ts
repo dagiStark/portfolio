@@ -14,7 +14,7 @@ export const projects = [
     des: "A pizza ordering service that allows restaurants to register and manage their menus and orders, admin panels for owners and administrators, role-based access for efficient user management.",
     img: "/pizza2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/dagiStark/pizza-ordering-service",
+    link: "https://pizza-ordering-service-client.vercel.app",
     technologies: ["Node Js", "React", "Postgresql", "Material UI", "Zod"],
   },
   {
@@ -43,6 +43,15 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/dagiStark/admin-dashboard",
     technologies: ["Node Js","Refine", "MongoDB", "Material UI", "AuthO"],
+  },
+  {
+    id: 6,
+    title: "Gallery",
+    des: "memory creating app built with for people from everywhere from the globe",
+    img: "/gallery.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://gallery-client-nu.vercel.app/",
+    technologies: ["Node Js","React", "MongoDB", "Material UI", "Redux"],
   },
 ];
 
