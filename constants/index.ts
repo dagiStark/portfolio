@@ -21,9 +21,9 @@ export const projects = [
     id: 3,
     title: "Chat App",
     des: "A real-time chat app with messaging and active status functionality built using Socket.io, enabling instant communication and live user activity tracking.",
-    img: "/chat.png",
+    img: "/chatUpdated.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/dagiStark/chat-app",
+    link: "https://chat-app-client-chi-ashen.vercel.app",
     technologies: ["Node Js", "React", "MongoDB", "Socket.io", "Jwt"],
   },
   {
