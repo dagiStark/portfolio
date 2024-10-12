@@ -2,7 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/SpotLight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FlipWords } from "./ui/FlipWords";
-import me from "/public/cop.jpg";
+import me from "/public/me.png";
 import Image from "next/image";
 
 const About = () => {
@@ -91,7 +91,7 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className="">
+          <div className="w-1/3">
             <Image
               src={me}
               alt=""

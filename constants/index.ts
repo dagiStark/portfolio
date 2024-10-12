@@ -47,7 +47,7 @@ export const projects = [
   {
     id: 6,
     title: "Gallery",
-    des: "memory creating app built with for people from everywhere from the globe",
+    des: "memory creating app for people from everywhere from the globe",
     img: "/gallery.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gallery-client-nu.vercel.app/",
