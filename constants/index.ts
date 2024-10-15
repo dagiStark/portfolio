@@ -5,7 +5,7 @@ export const projects = [
     des: "An e-commerce platform built with Sanity as a headless CMS for content management, integrated with Stripe for secure and seamless payment processing.",
     img: "/ecommerce.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/dagiStark/e-commerce-2",
+    link: "https://e-commerce-2-client.vercel.app/",
     technologies: ["Sanity.io", "Next.js", "Stripe", "Tailwind", "Typescript"],
   },
   {
